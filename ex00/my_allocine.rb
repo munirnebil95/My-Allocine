@@ -57,14 +57,23 @@ INNER JOIN movies
 ON movies.id = movies_actors.mov_id
 WHERE movies.mov_title ="Annie Hall";"
 
-requests["Find the name of movie and director who directed a movies that casted a role as Sean Maguire"] = ""
-SELECT movies.mov_title, directors.dir_fname, directors.dir_lname
+requests["Find the name of movie and director who directed a movies that casted a role as Sean Maguire"] = 
+"SELECT movies.mov_title, directors.dir_fname, directors.dir_lname
 FROM movies
 INNER JOIN directors_movies
-ON movies.id = directors_movies
+ON movies.id = directors_movies.mov_id
+INNER JOIN directors
+ON directors.id = directors_movies.dir_id
+INNER JOIN movies_actors
+ON movies_actors.mov_id = movies.id
+WHERE movies_actors.role = "Sean Maguire";"
 
-requests["Find all the actors who have not acted in any movie between 1990 and 2000"] = ""
-SELECT act_fname, act_lname
+requests["Find all the actors who have not acted in any movie between 1990 and 2000"] = 
+"SELECT actors.act_fname, actors.act_lname
 FROM actors
+INNER JOIN movies_actors
+ON actors.id = movies_actors.act_id
 INNER JOIN movies
-WHERE mov_dt_rel NOT BETWEEN 1990 AND 2000;
+ON movies.id = movies_actors.mov_id
+WHERE movies.mov_year NOT BETWEEN 1990 AND 2000
+ORDER BY actors.act_fname ASC;"
