@@ -2,17 +2,17 @@
 ***
 
 ## Task
-TODO - What is the problem? And where is the challenge?
+TRYING TO UNDERSTAND JOIN CLAUSE AND TRYING TO FORMULATE A SOLUTION TO UNDERSTAND ALL JOINTS.
 
 ## Description
-TODO - How have you solved the problem?
+I HAVE SOLVED THIS PROBLEM BY REACHING OUT TO STUDENTS AND WATCHING YOUTUBE.
 
 ## Installation
-TODO - How to install your project? npm install? make? make re?
+TO INSTALL YOUR PROJECT WILL NEED TO INSTALL SQLITE PACKAGE IN ORDER TO CHECK REQUESTS.
 
 ## Usage
-TODO - How does it work?
-```
+SQL REQUESTS GENERATE OUTPUTS RELATED TO REQUEST INSTRUCTIONS.
+
 ./my_project argument1 argument2
 ```
 
