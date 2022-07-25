@@ -1,4 +1,4 @@
-requests['Display all actors'] = "SELECT act_fname, act_lname FROM actors;"
+requests['Display all actors'] = "SELECT* FROM actors;"
 
 requests['Display all genres'] = "SELECT* FROM genres;"
 
