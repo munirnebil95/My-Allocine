@@ -1,5 +1,4 @@
-requests['Display all actors'] = "SELECT act_fname, act_lname 
-                                  FROM actors;"
+requests['Display all actors'] = "SELECT act_fname, act_lname FROM actors;"
 
 requests['Display all genres'] = "SELECT* FROM genres;"
 
@@ -10,7 +9,7 @@ requests['Display reviewer name from the reviews table'] = "SELECT rev_name FROM
 requests["Find the year when the movie American Beauty released"] = 
 "SELECT mov_year 
 FROM movies
-WHERE mov_title = "American Beauty";"
+WHERE mov_title = 'American Beauty';"
 
 requests["Find the movie which was released in the year 1999"] = "SELECT mov_title FROM movies
 WHERE mov_year ="1999";"
