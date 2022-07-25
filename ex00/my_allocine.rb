@@ -12,7 +12,7 @@ FROM movies
 WHERE mov_title = 'American Beauty';"
 
 requests["Find the movie which was released in the year 1999"] = "SELECT mov_title FROM movies
-WHERE mov_year ="1999";"
+WHERE mov_year ='1999';"
 
 requests["Find the movie which was released before 1998"] = "SELECT mov_title FROM movies
 WHERE mov_year < '1998';"
@@ -57,7 +57,7 @@ INNER JOIN movies_actors
 ON actors.id = movies_actors.act_id
 INNER JOIN movies
 ON movies.id = movies_actors.mov_id
-WHERE movies.mov_title ="Annie Hall";"
+WHERE movies.mov_title ='Annie Hall';"
 
 requests["Find the name of movie and director who directed a movies that casted a role as Sean Maguire"] = 
 "SELECT movies.mov_title, directors.dir_fname, directors.dir_lname
@@ -68,7 +68,7 @@ INNER JOIN directors
 ON directors.id = directors_movies.dir_id
 INNER JOIN movies_actors
 ON movies_actors.mov_id = movies.id
-WHERE movies_actors.role = "Sean Maguire";"
+WHERE movies_actors.role = 'Sean Maguire';"
 
 requests["Find all the actors who have not acted in any movie between 1990 and 2000"] = 
 "SELECT actors.act_fname, actors.act_lname
