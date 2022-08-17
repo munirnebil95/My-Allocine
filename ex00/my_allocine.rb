@@ -17,7 +17,7 @@ WHERE mov_year ='1999';"
 requests["Find the movie which was released before 1998"] = "SELECT mov_title FROM movies
 WHERE mov_year < '1998';"
 
-*******(need to fix)requests["Find the name of all reviewers who have rated 7 or more stars to their rating, order by reviews rev_name (it might have duplicated names :-))"] = 
+requests["Find the name of all reviewers who have rated 7 or more stars to their rating, order by reviews rev_name (it might have duplicated names :-))"] = 
 "SELECT rev_name, rev_stars  
 FROM reviews, movies_ratings_reviews
 WHERE rev_stars >= 7
