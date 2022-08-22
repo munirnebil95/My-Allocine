@@ -71,7 +71,7 @@ INNER JOIN movies_actors
 ON movies_actors.mov_id = movies.id
 WHERE movies_actors.role = 'Sean Maguire';"
 
-requests["Find all the actors who have not acted in any movie between 1990 and 2000"] = 
+requests["Find all the actors who have not acted in any movie between 1990 and 2000 (select only actor first name, last name, movie title and release year)"] = 
 "SELECT actors.act_fname, actors.act_lname, movies.mov_title, movies.mov_year 
 FROM actors
 INNER JOIN movies_actors
